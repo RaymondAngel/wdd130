@@ -24,13 +24,13 @@ main img {
     border: 1px solid gray;
     padding: 10px;
     background-color: gray;
-    box-shadow: 4px;
+    box-shadow: 0 0 10px gray;
 }
 
 aside {
     width: auto;
     height: auto;
-    box-shadow: 2px;
+    box-shadow: 0 0 10px gray;
     margin: auto;
     border: 1px solid blue;
     padding: 0%;
