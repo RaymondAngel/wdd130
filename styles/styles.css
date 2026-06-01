@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: darkblue;
+    --accent: blue;
+    --background: white;
+    --text: black;
+    --max-width: 840px;
+    --box-shadow: 0 0 10px gray;
+    --nav-padding: 10px;
+    --gutter: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Visual ordering: show `main` first, then `header`, then `aside`, then `footer` */
+main {
+    order: 1;
+}
+
+header {
+    order: 2;
+}
+
+aside {
+    order: 3;
+}
+
+footer {
+    order: 4;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -24,14 +57,14 @@ h1 {
 }
 
 main img {
-    width: auto;
-    height: auto;
     float: right;
-
+    margin-left: 1rem;
+    max-width: 40%;
+    height: auto;
     border: 1px solid gray;
     padding: 10px;
     background-color: gray;
-    box-shadow: 0 0 10px gray;
+    box-shadow: var(--box-shadow);
 }
 
 aside {
