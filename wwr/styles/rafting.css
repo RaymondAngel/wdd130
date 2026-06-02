@@ -90,6 +90,7 @@ h1 {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  background-color: var(--baby-blue);
 }
 
 .hero article img {
@@ -100,7 +101,7 @@ h1 {
 
 .history, .adventure-details {
   margin-top: 2rem;
-  background: #fff;
+  background: var(--section-bg);
   padding: 1rem;
   border-radius: 6px;
   word-wrap: break-word;
@@ -120,6 +121,10 @@ footer p {
 }
 
 .social-media a {
+  text-decoration: none;
+}
+
+.socialmedia a {
   text-decoration: none;
 }
 
