@@ -37,7 +37,8 @@ main { padding:2rem; background:var(--section-bg); min-height:60vh; }
 .hero-card img { width:160px; height:auto; border-radius:6px; }
 
 /* Float article image to the right inside the hero/article */
-.hero article img, .hero .hero-card img { float:right; margin-left:1rem; }
+.hero article img { float:right; margin-left:1rem; }
+.hero .hero-card img { float:right; margin-left:1rem; }
 .hero-card p { margin:0; line-height:1.5; }
 
 .history, .adventure-details { margin-top:2rem; background:#fff; padding:1rem; border-radius:6px; }
@@ -46,7 +47,10 @@ main { padding:2rem; background:var(--section-bg); min-height:60vh; }
 footer { padding:1rem 2rem; background:#0f2b3d; color:#fff; display:flex; justify-content:space-between; align-items:center; }
 footer p { margin:0; }
 
-.social-media a { text-decoration:none; }
+.socialmedia a,
+.social-media a,
+nav a,
+footer a { text-decoration:none; }
 .social-media a img { width:28px; height:28px; display:inline-block; vertical-align:middle; }
 
 /* Responsive */
