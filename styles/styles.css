@@ -20,51 +20,68 @@ body {
     flex-direction: column;
 }
 
-/* Visual ordering: show `main` first, then `header`, then `aside`, then `footer` */
-main {
-    order: 1;
-}
-
 header {
-    order: 2;
-}
-
-aside {
-    order: 3;
-}
-
-footer {
-    order: 4;
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 1rem;
+    text-align: left;
+    margin: 1rem;
+    
 }
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1px;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 3px;
 }
 
 main {
     max-width: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 h1 {
     color: darkblue;
+    text-align: center;
+    padding: 1rem;
 }
 
 main img {
     float: right;
+    margin-top: 1rem;
     margin-left: 1rem;
-    max-width: 40%;
+    margin-right: 0;
+    width: 40%;
+    min-width: 220px;
     height: auto;
     border: 1px solid gray;
-    padding: 10px;
+    padding: 5px;
     background-color: gray;
     box-shadow: var(--box-shadow);
+}
+
+p {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid darkblue;
+    padding: 1rem;
+    background: darkblue;
+    color: white;
 }
 
 aside {
@@ -78,9 +95,12 @@ aside {
 }
 
 aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    position: static;
 }
 
 aside img {
@@ -96,21 +116,8 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
-}
-
 footer {
     margin-top: auto;
     border-top: 20px solid blue;
     text-align: center;
-}
-
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid darkblue;
-    padding: 1rem;
-    background: darkblue;
-    color: white;
 }
