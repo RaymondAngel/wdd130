@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    margin-top: 0.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font: inherit;
+}
+
+button {
+    background-color: #006eb6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    margin: 7px 0;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 0.5rem;
+    font: inherit;
+}
+
+input,
+select {
+    min-height: 44px;
+}
