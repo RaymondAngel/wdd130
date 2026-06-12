@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: midnightblue;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+footer {
+    border-top: 1px solid lightgray;
+    padding: 1rem;
+    text-align: center;
+}   
+
+fieldset {
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    margin-top: 0.5rem;
+}
