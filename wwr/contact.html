@@ -29,10 +29,63 @@
 			<p>Address: 123 River Road, Idaho Falls, ID 83401</p>
 			<p>Phone: (555) 123-4567</p>
 			<p>Email: info@whitewater.com</p>
-			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5757.989886064081!2d-111.783255!3d43.81446429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1781259807131!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
 		</section>
+
+		<div class="contact-layout">
+			<section class="map-section">
+				<h2>Find Us</h2>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5757.989886064081!2d-111.783255!3d43.81446429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1781259807131!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</section>
+
+			<section class="contact-form">
+				<h2>Contact Us</h2>
+				<form>
+					<label for="fullname">Full Name</label>
+					<input type="text" id="fullname" name="fullname" required>
+
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" required>
+
+					<fieldset class="purpose-options">
+						<legend>Purpose of the Message</legend>
+
+						<input type="radio" id="purpose-general" name="message-purpose" value="general-inquiry" required>
+						<label for="purpose-general">General Inquiry</label>
+
+						<input type="radio" id="purpose-reservation" name="message-purpose" value="reservation-question">
+						<label for="purpose-reservation">Reservation Question</label>
+
+						<input type="radio" id="purpose-website" name="message-purpose" value="website-question">
+						<label for="purpose-website">Website Question</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Preferred Contact Method</legend>
+
+						<input type="radio" id="contact-email" name="contact-method" value="email" required>
+						<label for="contact-email">Email</label>
+
+						<input type="radio" id="contact-phone" name="contact-method" value="phone">
+						<label for="contact-phone">Phone</label>
+
+						<input type="radio" id="contact-text" name="contact-method" value="text">
+						<label for="contact-text">Text Message</label>
+					</fieldset>
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+
+					<div class="newsletter">
+						<input type="checkbox" id="newsletter" name="newsletter">
+						<label for="newsletter">Please subscribe me to the monthly newsletter</label>
+					</div>
+
+					<button type="submit">Send Message</button>
+				</form>
+			</section>
+		</div>
 
 		<section class="team">
 			<h2>Meet the Team</h2>
@@ -52,47 +105,6 @@
 			</div>
 		</section>
 
-		<section class="contact-form">
-			<h2>Contact Us</h2>
-			<form>
-				<label for="fullname">Full Name</label>
-				<input type="text" id="fullname" name="fullname" required>
-
-				<label for="email">Email Address</label>
-				<input type="email" id="email" name="email" required>
-
-				<label for="message-purpose">Purpose of the Message</label>
-				<select id="message-purpose" name="message-purpose" required>
-					<option value="">Choose one</option>
-					<option value="general-inquiry">General Inquiry</option>
-					<option value="reservation-question">Reservation Question</option>
-					<option value="website-question">Website Question</option>
-				</select>
-
-				<fieldset>
-					<legend>Preferred Contact Method</legend>
-
-					<input type="radio" id="contact-email" name="contact-method" value="email" required>
-					<label for="contact-email">Email</label>
-
-					<input type="radio" id="contact-phone" name="contact-method" value="phone">
-					<label for="contact-phone">Phone</label>
-
-					<input type="radio" id="contact-text" name="contact-method" value="text">
-					<label for="contact-text">Text Message</label>
-				</fieldset>
-
-				<label for="message">Message</label>
-				<textarea id="message" name="message" rows="4" required></textarea>
-
-				<div class="newsletter">
-					<input type="checkbox" id="newsletter" name="newsletter">
-					<label for="newsletter">Please subscribe me to the monthly newsletter</label>
-				</div>
-
-				<button type="submit">Send Message</button>
-			</form>
-		</section>
 	</main>
 
 		
